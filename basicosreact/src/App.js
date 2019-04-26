@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,6 +21,22 @@ function App() {
       </header>
     </div>
   );
+}
+
+export class AppEjemplo extends Component {
+  render() {
+    return(
+      React.createElement(
+        'div',
+        {className: 'App-header'},
+        'Hola desde el componente',
+        React.createElement(
+          'input',
+          {type: "text", value: 'Value para el Input'}
+        )
+      )
+    );
+  }
 }
 
 export default App;
