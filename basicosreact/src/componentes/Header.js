@@ -10,10 +10,11 @@ import React from 'react'
 // }
 
 // ***** Como --> Functional Component ***** //
-const Header = () => {
+const Header = (props) => {
+    // const titulo = 'Nuestra Tienda Virtual';
     return (
         <header>
-            <h1>Tienda Virtual</h1>
+            <h1>{props.titulo}</h1>
         </header>
     )
 }
