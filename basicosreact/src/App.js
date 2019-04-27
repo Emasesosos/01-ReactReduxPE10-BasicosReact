@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 
 function App() {
   return (
@@ -32,7 +32,11 @@ export class AppEjemplo extends Component {
         'Hola desde el componente',
         React.createElement(
           'input',
-          {type: "text", value: 'Value para el Input'}
+          {type: "text", value: 'Value para el Input'},
+        ),
+        React.createElement(
+            'img',
+            {src: logo, className:'App-logo',  alt:'logo'}
         )
       )
     );
